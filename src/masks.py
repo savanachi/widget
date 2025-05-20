@@ -1,4 +1,24 @@
 """
+Функция для считывания входных данных и определения что
+подаётся на вход: номер карты или счёт и выбора соот-
+ветствующей функции для маскирования
+"""
+
+def get_reqiusits(bank_accounts: str) -> str :
+    """Функция для обработки ввода банковских реквиизитов"""
+    new_line = bank_accounts.split()
+    if new_line[0] == 'Счет' :
+        masked_line = get_mask_account(new_line[-1])
+        new_line[-1] = masked_line
+    else:
+        masked_line = get_mask_card_number(new_line[-1])
+        new_line[-1] = masked_line
+
+    return " ".join(new_line)
+
+
+
+"""
 Функция get_mask_card_number принимает на вход номер карты и
 возвращает ее маску. Номер карты замаскирован и отображается в формате
 XXXX XX** **** XXXX, где X — это цифра номера. То есть видны первые 6 цифр
