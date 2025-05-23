@@ -1,8 +1,9 @@
-def get_date(date_str : str) -> str :
-    """Функция получения даты"""
+from black import datetime
 
 
-    return  new_date
+def get_date(date_str: str) -> str:
+    """Функция переформатирования даты"""
+    return datetime.fromisoformat(date_str).strftime('%d.%m.%Y')
 
 
 def get_reqiusits(bank_accounts: str) -> str:
@@ -18,10 +19,8 @@ def get_reqiusits(bank_accounts: str) -> str:
     return " ".join(new_line)
 
 
-
 def get_mask_card_number(card_number: str) -> str:
     """Функция принимает на вход номер карты и маскирует цифры номера."""
-
     card_list = list(card_number)
     for index in range(len(card_number)):
         if 6 <= index <= 11:
@@ -33,13 +32,12 @@ def get_mask_card_number(card_number: str) -> str:
     return card_str
 
 
-
 def get_mask_account(account_number: str) -> str:
     """Функция принимает на вход номер счёта и возвращает маску."""
-
     masked_acc = list(account_number[-6:])
     for i in range(0, 2):
         masked_acc[i] = "*"
 
     masked_str = "".join(masked_acc)
+
     return masked_str

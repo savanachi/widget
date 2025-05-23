@@ -1,5 +1,4 @@
-import datetime
-from src.masks import get_reqiusits
+from src.widget import get_reqiusits, get_date
 
 if __name__ == "__main__":
     with open("../tests/accounts_cards.txt", "r", encoding="utf-8") as file:
@@ -7,3 +6,5 @@ if __name__ == "__main__":
         for line in lines:
             req_mask = get_reqiusits(line)
             print(req_mask)
+
+    print(get_date("2024-03-11T02:26:18.671407"))
