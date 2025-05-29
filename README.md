@@ -8,3 +8,12 @@ state соответствует указанному значению.
 
 Функция sort_by_date() принимает список словарей и необязательный параметр, задающий порядок сортировки (по умолчанию — убывание). Функция должна возвращать новый список, отсортированный по дате (
 date).
+
+### Список зависимостей:
+* from typing import Any, Dict, List
+* from src.widget import get_reqiusits, get_date
+* from src.processing import filter_by_state, sort_by_date
+* from black import datetime
+
+
+
