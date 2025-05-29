@@ -15,5 +15,6 @@ date).
 * from src.processing import filter_by_state, sort_by_date
 * from black import datetime
 
-
+Основными рабочими файлами являются файлы widget.py и 
+processing.py. Файл main.py является файлом запуска.
 
