@@ -3,7 +3,7 @@ from black import datetime
 
 def get_date(date_str: str) -> str:
     """Функция переформатирования даты"""
-    return datetime.fromisoformat(date_str).strftime('%d.%m.%Y')
+    return datetime.fromisoformat(date_str).strftime("%d.%m.%Y")
 
 
 def get_reqiusits(bank_accounts: str) -> str:
