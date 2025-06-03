@@ -6,8 +6,8 @@
 
 ### Список зависимостей:
 * from typing import Any, Dict, List
-* from src.widget import get_reqiusits, get_date
-* from src.processing import filter_by_state, sort_by_date
+* from 'src.widget' import get_requisites, get_date
+* from 'src.processing' import filter_by_state, sort_by_date
 * from black import datetime
 
 Основными рабочими файлами являются файлы widget.py и 
