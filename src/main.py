@@ -2,7 +2,7 @@ from src.widget import mask_account_card, get_date
 from src.processing import filter_by_state, sort_by_date
 
 if __name__ == "__main__":
-    with open("tests/accounts_cards.txt", "r", encoding="utf-8") as file:
+    with open("../tests/accounts_cards.txt", "r", encoding="utf-8") as file:
         lines = file.readlines()
         for line in lines:
             req_mask = mask_account_card(line)
