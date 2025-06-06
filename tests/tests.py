@@ -7,4 +7,3 @@ def test_mask_account_card():
     assert mask_account_card(bank_accounts= 'fassdfa daSDSA') == 'wrong data'
     assert mask_account_card(bank_accounts='Счет 64686473678894779589') == 'Счет **9589'
 
-
