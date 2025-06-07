@@ -1,5 +1,5 @@
-from src.widget import mask_account_card, get_date
 from src.processing import filter_by_state, sort_by_date
+from src.widget import get_date, mask_account_card
 
 if __name__ == "__main__":
     with open("../tests/accounts_cards.txt", "r", encoding="utf-8") as file:
