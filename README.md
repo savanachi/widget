@@ -6,9 +6,9 @@
 
 Тесты запускаются командой: pytest -v . 
 Для вывода на экран процента покрытия нужно запустить
-команду: pytest -v --cov=src
+команду: pytest -v --cov=src.
 Для создания HTML-ОТЧЁТА запускатся следющая комада:
-pytest --cov=src --cov-report=html
+pytest --cov=src --cov-report=html.
 
 
 ### Список зависимостей:
