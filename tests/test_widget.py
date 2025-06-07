@@ -1,4 +1,6 @@
-from src.widget import mask_account_card
+import pytest
+
+from src.widget import mask_account_card, get_date
 
 
 def test_mask_account_card():
@@ -7,3 +9,11 @@ def test_mask_account_card():
     assert mask_account_card(bank_accounts= 'fassdfa daSDSA') == 'wrong data'
     assert mask_account_card(bank_accounts='Счет 64686473678894779589') == 'Счет **9589'
 
+
+@pytest.fixture
+def date():
+    return "2024-03-11T02:26:18.671407"
+
+
+def test_get_date(date):
+    assert get_date(date) == "11.03.2024"
