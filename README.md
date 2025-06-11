@@ -1,18 +1,20 @@
-### Домашнее Задание 10.1
+### Домашнее Задание 10.2
 
-### Закреление работы с GitHub и реализация функций filter_by_state и sort_by_date
+### Написание тестов для проекта виджетов для банковских карт.
+ Пишем тесты для файлов masks.py, processing.py, widget.py
+соответственно test_masks.py, test_porcessing.py, test_widget.py
 
-Функция filter_by_state() принимает список словарей и опционально значение для ключа
-state(по умолчанию'EXECUTED'). Функция возвращает новый список словарей, содержащий только те словари, у которых ключ
-state соответствует указанному значению.
+Тесты запускаются командой: pytest -v . 
+Для вывода на экран процента покрытия нужно запустить
+команду: pytest -v --cov=src.
+Для создания HTML-ОТЧЁТА запускается следующая комада:
+pytest --cov=src --cov-report=html.
 
-Функция sort_by_date() принимает список словарей и необязательный параметр, задающий порядок сортировки (по умолчанию — убывание). Функция должна возвращать новый список, отсортированный по дате (
-date).
 
 ### Список зависимостей:
 * from typing import Any, Dict, List
-* from src.widget import get_reqiusits, get_date
-* from src.processing import filter_by_state, sort_by_date
+* from 'src.widget' import get_requisites, get_date
+* from 'src.processing' import filter_by_state, sort_by_date
 * from black import datetime
 
 Основными рабочими файлами являются файлы widget.py и 
