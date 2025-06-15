@@ -89,6 +89,21 @@ if __name__ == "__main__":
                 "to": "Visa Platinum 8990922113665229"
             },
             {
+                "id": 895315942,
+                "state": "EXECUTED",
+                "date": "2018-08-19T04:27:37.904916",
+                "operationAmount": {
+                    "amount": "56883.54",
+                    "currency": {
+                        "name": "EUR",
+                        "code": "EUR"
+                    }
+                },
+                "description": "Перевод с карты на карту",
+                "from": "Visa Classic 6831982476737658",
+                "to": "Visa Platinum 8990922113665229"
+            },
+            {
                 "id": 594226727,
                 "state": "CANCELED",
                 "date": "2018-09-12T21:27:25.241689",
