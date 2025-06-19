@@ -10,6 +10,10 @@
 Для создания HTML-ОТЧЁТА запускается следующая комада:
 pytest --cov=src --cov-report=html.
 
+В проект добавлены модули generators.py и tests_generators.py
+В модуле generators.py реализованы функции-генераторы,
+а в модуле tests_generators.py написаны тессты для функций-
+генераторов.
 
 ### Список зависимостей:
 * from typing import Any, Dict, List
