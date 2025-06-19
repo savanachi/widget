@@ -1,14 +1,9 @@
-from typing import Generator
+import pytest
 
-def card_number_generator(start: int, end: int) -> Generator:
-    for index in range(start, end + 1):
-        card_number = []
-        num = str(index).zfill(16)
-        for j in range(0, 16, 4):
-            card_number.append(num[j:j+4])
-        yield " ".join(card_number)
 
-opers = [
+@pytest.fixture()
+def opers():
+    return [
             {
                 "id": 939719570,
                 "state": "EXECUTED",
@@ -100,16 +95,3 @@ opers = [
                 "to": "Счет 14211924144426031657"
             }
         ]
-
-
-def filter_by_currency(operations: list[dict], currency: str = "USD") -> Generator:
-    for operation in operations:
-        if operation["operationAmount"]["currency"]["code"] == currency:
-            yield operation
-
-
-def transaction_descriptions(transactions: list[dict]) -> str:
-    for transaction in transactions:
-        yield transaction["description"]
-
-
