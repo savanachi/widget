@@ -17,15 +17,16 @@ def log(filename: Optional[str] = None) -> Callable:
                 write_log(f"{func.__name__}: OK : {result}\n", filename)
                 return result
             except Exception as e:
-                message = f"{func.__name__} - {str(e)} - args: {args}  - kwargs: {kwargs}\n"
+                message = f"{func.__name__} - {type(e)} - args: {args} - kwargs: {kwargs}\n"
                 write_log(message, filename)
+                raise
         return  wrapper
     return decorator
 
 
-@log('log.txt')
+@log()
 def foo(x, y):
     return x+y
 
 
-print(foo(22,'3'))
+#print(foo(22,'3'))
