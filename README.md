@@ -4,7 +4,7 @@
  Пишем тесты для файлов masks.py, processing.py, widget.py
 соответственно test_masks.py, test_porcessing.py, test_widget.py
 
-Дописал модуль decorators.py & test_decorators.py в основной 
+Дописал модуль decorators.py & tests_decorators.py в основной 
 проект. В модуле tests_decorators.py написали тестовые функции
 для проверки модуля decorators.py
 
