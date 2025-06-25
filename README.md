@@ -4,6 +4,10 @@
  Пишем тесты для файлов masks.py, processing.py, widget.py
 соответственно test_masks.py, test_porcessing.py, test_widget.py
 
+Дописал модуль decorators.py & test_decorators.py в основной 
+проект. В модуле tests_decorators.py написали тестовые функции
+для проверки модуля decorators.py
+
 Тесты запускаются командой: pytest -v . 
 Для вывода на экран процента покрытия нужно запустить
 команду: pytest -v --cov=src.
