@@ -20,13 +20,15 @@ def log(filename: Optional[str] = None) -> Callable:
                 message = f"{func.__name__} - {type(e)} - args: {args} - kwargs: {kwargs}\n"
                 write_log(message, filename)
                 raise
-        return  wrapper
+
+        return wrapper
+
     return decorator
 
 
 @log()
 def foo(x, y):
-    return x+y
+    return x + y
 
 
-print(foo(22,5))
+print(foo(22, 5))
