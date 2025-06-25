@@ -29,4 +29,4 @@ def foo(x, y):
     return x+y
 
 
-#print(foo(22,'3'))
+print(foo(22,5))
