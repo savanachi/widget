@@ -1,4 +1,5 @@
 import pytest
+
 from src.masks import get_mask_account, get_mask_card_number
 
 
@@ -11,10 +12,9 @@ from src.masks import get_mask_account, get_mask_card_number
         ("715830073472675899", "wrong datas"),
     ],
 )
-
-
 def test_get_mask_card_number(my_input, my_output):
     assert get_mask_card_number(my_input) == my_output
+
 
 @pytest.mark.parametrize(
     "my_input, my_output",
@@ -25,6 +25,5 @@ def test_get_mask_card_number(my_input, my_output):
         ("6468647367889477958999", "wrong datas"),
     ],
 )
-
 def test_get_mask_account(my_input, my_output):
     assert get_mask_account(my_input) == my_output
